@@ -1,6 +1,6 @@
 # Stock Portfolio Tracker!
 
-- [React Remix Quick Start]([https://remix.run/docs](https://remix.run/docs/en/main/start/quickstart))
+- [React Remix Quick Start](https://remix.run/docs](https://remix.run/docs/en/main/start/quickstart )
 
 stock_portfolio_tracker/ = Root level
 
