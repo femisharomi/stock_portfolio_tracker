@@ -16,7 +16,7 @@ export default function PortfolioOverview() {
         <div className='overview-container'>
           <h1>Portfolio Overview</h1>
       
-          <p>This is where the portfolio overview content will start to go go.</p>
+          <p>This is where the portfolio overview content will start to go.</p>
         </div>
         <Outlet />
         <Scripts />

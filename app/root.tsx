@@ -10,18 +10,6 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
-  const navigate = useNavigate(); //Initalises the useNavigate hook
-
-  const login = async () => {
-    //Enter login functionality here
-    //for now there is a temp stub here 
-    navigate('/PortfolioOverview');
-  }
-
-  const loginWithSocialMedia = (provider: string) => {
-    // Logic for logging in with social media
-  }
-
   return (
     <html lang="en">
       <head>
@@ -31,23 +19,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="login-container">
-          <h1>Login</h1>
-          <div className="input-container">
-            <input type="text" placeholder="Username" />
-          </div>
-          <div className="input-container">
-            <input type="password" placeholder="Password" />
-          </div>
-          <div className="button-container">
-            <button className="login" onClick={login}>Login</button>
-          </div>
-          <div className="social-media">
-            <button className="google-login-button" onClick={() => loginWithSocialMedia('google')} title="Login with Google"></button>
-            <button className="microsoft-login-button" onClick={() => loginWithSocialMedia('microsoft')} title="Login with Microsoft"></button>
-            <button className="yahoo-login-button" onClick={() => loginWithSocialMedia('yahoo')} title="Login with Yahoo"></button>
-          </div>
-        </div>
+        {/* Content gets generated between here - will need to expand on how it all looks later...... */}
         <Outlet />
         <Scripts />
       </body>
