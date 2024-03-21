@@ -1,4 +1,4 @@
-/* stock_portfolio_tracker/styles/main.css */
+/* app.css */
 body {
     margin: 0;
     padding: 0;
@@ -9,10 +9,10 @@ body {
     height: 100vh;
     background-color: #282832!important; /* Dark mode background */
     box-shadow: 2px 2px 6px -4px #2e2e2e!important;
-    color: #fff!important /* Dark mode text color */
-}
-
-.login-container {
+    color: #fff!important; /* Dark mode text color */
+  }
+  
+  .login-container {
     /* Dark mode background */
     background-color: #32323e;
     width: 25%;
@@ -20,30 +20,30 @@ body {
     box-shadow: 2px 2px 6px -4px #2e2e2e!important;
     padding: 20px;
     border-radius: 10px;
-}
-
-.login-container h1{
+  }
+  
+  .login-container h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.input-container, .button-container {
+  }
+  
+  .input-container, .button-container {
     display: flex;
     justify-content: center;
-}
-
-.input-container input[type="text"], .input-container input[type="password"]{
+  }
+  
+  .input-container input[type="text"], .input-container input[type="password"] {
     width: 70%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-}
-
-.login {
+  }
+  
+  .login {
     background-color: #4CAF50; /* Green */
     color: white;
     cursor: pointer;
@@ -53,19 +53,19 @@ body {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-}
-
-.login:hover {
+  }
+  
+  .login:hover {
     background-color: #45a049;
-}
-
-.social-media {
+  }
+  
+  .social-media {
     display: flex;
     justify-content: center; /* Horizontally align items in the center */
     margin-top: 10px;
-}
-
-.social-media button {
+  }
+  
+  .social-media button {
     display: inline-block;
     margin-right: 5px;
     width: 50px;
@@ -74,23 +74,31 @@ body {
     background-size: cover;
     border: none;
     padding: 0;
-}
-
-.social-media button:hover {
+  }
+  
+  .social-media button:hover {
     filter: brightness(0.8); 
-}
-
-.google-login-button{
+  }
+  
+  .google-login-button {
     /* Set the background image */
-    background-image: url('../images/google_icon.png');
-}
-
-.microsoft-login-button{
-        /* Set the background image */
-        background-image: url('../images/microsoft_icon.png');
-}
-
-.yahoo-login-button{
+    background-image: url('/google_icon.png');
+  }
+  
+  .microsoft-login-button {
     /* Set the background image */
-    background-image: url('../images/yahoo_icon.png');
-}
+    background-image: url('/microsoft_icon.png');
+  }
+  
+  .yahoo-login-button {
+    /* Set the background image */
+    background-image: url('/yahoo_icon.png');
+  }
+  
+  .overview-container h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
