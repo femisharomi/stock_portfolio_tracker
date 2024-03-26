@@ -13,6 +13,14 @@ export default function PortfolioOverview() {
         <Links />
       </head>
       <body>
+      <div className="header">
+        <ul>
+          <li id="home-button"> SPC </li>
+          <li> Portfolio </li>
+          <li> Settings </li>
+        </ul>
+      </div>
+
         <div className='overview-container'>
           <h1>Portfolio Overview</h1>
       

@@ -1,7 +1,7 @@
 /*root.tsx*/
 import React, {useState} from 'react';
 import { Meta, Links, Outlet, Scripts, useNavigate } from "@remix-run/react";
-import appStylesHref from "./app.css?url";
+import appStylesHref from "./styles/app.css?url";
 import {LinksFunction, redirect } from '@remix-run/node';
 
 //Adding the stylesheet to all pages rendered.

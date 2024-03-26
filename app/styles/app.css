@@ -1,4 +1,10 @@
 /* app.css */
+
+@font-face{
+  font-family: planetKosmos;
+  src:url("./fonts/plank.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -100,4 +106,31 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(66, 66, 80, 0.5);
+    box-shadow: 1px 1px black;
+
+  }
+
+  .header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .header li{
+    display: inline;
+    margin-right: 50px;
+  }
+
+  #home-button{
+    font-family: planetKosmos;
+    font-size: 36px;
+    margin-right: 50px;
   }
