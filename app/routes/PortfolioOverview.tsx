@@ -13,13 +13,13 @@ export default function PortfolioOverview() {
         <Links />
       </head>
       <body>
-      <div className="header">
+      <header>
         <ul>
           <li id="home-button"> SPC </li>
-          <li> Portfolio </li>
-          <li> Settings </li>
+          <li> Account Value: £10,320 </li>
+          <li> Femi Sharomi </li>
         </ul>
-      </div>
+      </header>
 
         <div className='overview-container'>
           <h1>Portfolio Overview</h1>

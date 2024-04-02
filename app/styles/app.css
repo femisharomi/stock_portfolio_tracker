@@ -108,7 +108,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .header{
+  header{
     position: fixed;
     top: 0;
     left: 0;
@@ -118,13 +118,13 @@ body {
 
   }
 
-  .header ul{
+  header ul{
     list-style-type: none;
-    margin: 0;
+    margin: 0 100px;
     padding: 10px;
   }
 
-  .header li{
+  header li{
     display: inline;
     margin-right: 50px;
   }
@@ -132,5 +132,5 @@ body {
   #home-button{
     font-family: planetKosmos;
     font-size: 36px;
-    margin-right: 50px;
+    margin-right: 800px;
   }
