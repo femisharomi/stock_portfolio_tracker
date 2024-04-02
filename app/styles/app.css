@@ -115,22 +115,31 @@ body {
     width: 100%;
     background-color: rgba(66, 66, 80, 0.5);
     box-shadow: 1px 1px black;
-
+    /* display: flex; */
+    /* justify-content: space-between; Align items at the start and end edges */
+    padding: 10px 100px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    color: #CCC8E6;
   }
-
-  header ul{
+  
+  header ul {
     list-style-type: none;
-    margin: 0 100px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Vertically center items */
   }
-
-  header li{
-    display: inline;
+  
+  header li {
     margin-right: 50px;
   }
-
-  #home-button{
+  
+  #home-button {
     font-family: planetKosmos;
     font-size: 36px;
-    margin-right: 800px;
+    margin-right: auto;
+  }
+  
+  #account-value {
+    margin-right: 300px;
   }
