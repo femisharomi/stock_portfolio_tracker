@@ -19,6 +19,13 @@ export default function App() {
         <Links />
       </head>
       <body>
+      <header>
+          <ul>
+            <li id="home-button"> SPC </li>
+            <li id="account-value"> Account Value: £10,320 </li>
+            <li id="user-name"> Femi Sharomi </li>
+          </ul>
+        </header>
         {/* Content gets generated between here - will need to expand on how it all looks later...... */}
         <Outlet />
         <Scripts />

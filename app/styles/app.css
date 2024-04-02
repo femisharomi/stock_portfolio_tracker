@@ -100,24 +100,17 @@ body {
     /* Set the background image */
     background-image: url('/yahoo_icon.png');
   }
-  
-  .overview-container h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
 
   header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(66, 66, 80, 0.5);
-    box-shadow: 1px 1px black;
+    /* background-color: rgba(66, 66, 80, 0.5);
+    box-shadow: 1px 1px black; */
     /* display: flex; */
     /* justify-content: space-between; Align items at the start and end edges */
-    padding: 10px 100px; /* Adjust padding as needed */
+    padding: 10px 70px; /* Adjust padding as needed */
     box-sizing: border-box;
     color: #CCC8E6;
   }
@@ -142,4 +135,36 @@ body {
   
   #account-value {
     margin-right: 300px;
+  }
+
+  .overview-container {
+    display: flex;
+    padding: 10px 70px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-top: -200px; */
+  }
+
+  #sidebar{
+    width: 60px;
+    height: 500px;
+    background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px;
+    margin-right: 80px;
+  }
+
+  #primary{
+    width: 600px;
+    height: 500px;
+    /* background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px; */
+    margin-right: 40px;
+  }
+
+  #secondary{
+    width: 1000px;
+    height: 500px;
+    /* background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px; */
   }
