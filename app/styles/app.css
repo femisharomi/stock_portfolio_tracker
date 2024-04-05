@@ -165,6 +165,31 @@ body {
   #secondary{
     width: 1000px;
     height: 500px;
-    /* background-color: rgba(49, 49, 64, 0.48);
-    border-radius: 25px; */
+    background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px; 
+    padding: 20px;
+  }
+
+  /* table, th, td{
+    border: 1px solid black;
+    
+  } */
+
+  table{
+    /* background-color: #313140; */
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th{
+    text-align: left;
+  }
+
+  th:nth-child(1) {
+    width: 40%; /* Adjust this percentage for the first column */
+  }
+
+  th:nth-child(2),
+  th:nth-child(3) {
+    width: 30%; /* Adjust this percentage for the second and third columns */
   }

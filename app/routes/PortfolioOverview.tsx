@@ -17,7 +17,19 @@ export default function PortfolioOverview() {
             </div>
 
             <div id="secondary">
-            <img src="/investments.png"></img>
+              <h1>Stocks</h1>
+              <table>
+                <tr>
+                  <th>Stock</th>
+                  <th>Price</th>
+                  <th>24H Gain</th>
+                </tr>
+                <tr>
+                  <td>Apple</td>
+                  <td>£161</td>
+                  <td>+108%</td>
+                </tr>
+              </table>
             </div>
 
           </div>
