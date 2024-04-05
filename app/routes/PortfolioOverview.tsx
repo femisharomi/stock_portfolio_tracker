@@ -25,9 +25,9 @@ export default function PortfolioOverview() {
                   <th>24H Gain</th>
                 </tr>
                 <tr>
-                  <td>Apple</td>
-                  <td>£161</td>
-                  <td>+108%</td>
+                  <td id="stock-name">Apple</td>
+                  <td id="stock-value">£161</td>
+                  <td id="stock-gain">+108%</td>
                 </tr>
               </table>
             </div>
