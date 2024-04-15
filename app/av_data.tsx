@@ -3,6 +3,9 @@
 // Import any necessary modules or types
 import { fetchData } from "@remix-run/react/dist/data";
 
+export const alphaVantageApiKey = "JFPBYRJXEF9A6DAB"; 
+export const iexCloudApiKey = "";
+
 export let companyData = {
     logo : "", // assign logo in another 
     symbol : "",
@@ -31,8 +34,8 @@ export let companyData = {
 
 export async function getCompanyData(stockSymbol : string)
 {
-    const urlForStockPrice = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + stockSymbol + "&apikey=JFPBYRJXEF9A6DAB";
-    const urlForStockOverview = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + stockSymbol + "&apikey=JFPBYRJXEF9A6DAB";
+    const urlForStockPrice = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + stockSymbol + "&apikey=" + alphaVantageApiKey;
+    const urlForStockOverview = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + stockSymbol + "&apikey=" + alphaVantageApiKey;
 
     try 
     {

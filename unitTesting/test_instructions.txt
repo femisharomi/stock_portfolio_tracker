@@ -1,14 +1,3 @@
 Testing instructions: 
 
-Temp way to do unit test for functions to get results in the CLI. 
-
-Run the command below to build the .tsx file
-
-	tsc av_data.tsx 
-
-
-To run the generated file first change the .js name to .cjs 
-Then run: 
-
-	av_data.cjs 
-
+Temp way to do unit test
