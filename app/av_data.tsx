@@ -4,10 +4,9 @@
 import { fetchData } from "@remix-run/react/dist/data";
 
 export const alphaVantageApiKey = "JFPBYRJXEF9A6DAB"; 
-export const iexCloudApiKey = "";
 
 export let companyData = {
-    logo : "", // assign logo in another 
+    logo : "",  
     symbol : "",
     name : "",
     globalQuote: {
@@ -49,6 +48,7 @@ export async function getCompanyData(stockSymbol : string)
 
         // Assigning the retireved values to the companyData object.
         // Stock info
+        companyData.logo = await getStockLogo(stockSymbol);
         companyData.symbol = returnedOverviewData["Symbol"];
         companyData.name = returnedOverviewData["Name"];
 
@@ -82,3 +82,26 @@ export async function getCompanyData(stockSymbol : string)
     }
 }
 
+export async function getStockLogo(stockSymbol : string)
+{
+    let logoAddress: string;
+    //C-<<ADD A NOTE HERE
+    const urlForStockLogo = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + stockSymbol + "&apikey=" + alphaVantageApiKey;
+
+    try
+    {
+        //Fetch the stocks logo
+        const logoAddressResponse = await fetch(urlForStockLogo);
+
+        //C-<<ADD A NOTE HERE
+        logoAddress = await logoAddressResponse.text();
+    }
+    catch(error)
+    {
+        // Handle errors
+        console.error('Error fetching the stock logo:', error);
+        throw error; // Re-throw the error to propagate it
+    }
+
+    return logoAddress;
+}
