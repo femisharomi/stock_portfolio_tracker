@@ -1,0 +1,195 @@
+/* app.css */
+
+@font-face{
+  font-family: planetKosmos;
+  src:url("./fonts/plank.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282832!important; /* Dark mode background */
+    box-shadow: 2px 2px 6px -4px #2e2e2e!important;
+    color: #fff!important; /* Dark mode text color */
+  }
+  
+  .login-container {
+    /* Dark mode background */
+    background-color: #32323e;
+    width: 25%;
+    height: 35%;
+    box-shadow: 2px 2px 6px -4px #2e2e2e!important;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .login-container h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container, .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-container input[type="text"], .input-container input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login:hover {
+    background-color: #45a049;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center; /* Horizontally align items in the center */
+    margin-top: 10px;
+  }
+  
+  .social-media button {
+    display: inline-block;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    padding: 0;
+  }
+  
+  .social-media button:hover {
+    filter: brightness(0.8); 
+  }
+  
+  .google-login-button {
+    /* Set the background image */
+    background-image: url('/google_icon.png');
+  }
+  
+  .microsoft-login-button {
+    /* Set the background image */
+    background-image: url('/microsoft_icon.png');
+  }
+  
+  .yahoo-login-button {
+    /* Set the background image */
+    background-image: url('/yahoo_icon.png');
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rgba(66, 66, 80, 0.5);
+    box-shadow: 1px 1px black; */
+    /* display: flex; */
+    /* justify-content: space-between; Align items at the start and end edges */
+    padding: 10px 70px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    color: #CCC8E6;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Vertically center items */
+  }
+  
+  header li {
+    margin-right: 50px;
+  }
+  
+  #home-button {
+    font-family: planetKosmos;
+    font-size: 36px;
+    margin-right: auto;
+  }
+  
+  #account-value {
+    margin-right: 300px;
+  }
+
+  .overview-container {
+    display: flex;
+    padding: 10px 70px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-top: -200px; */
+  }
+
+  #sidebar{
+    width: 60px;
+    height: 500px;
+    background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px;
+    margin-right: 80px;
+  }
+
+  #primary{
+    width: 600px;
+    height: 500px;
+    /* background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px; */
+    margin-right: 40px;
+  }
+
+  #secondary{
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(49, 49, 64, 0.48);
+    border-radius: 25px; 
+    padding: 20px;
+  }
+
+  /* table, th, td{
+    border: 1px solid black;
+    
+  } */
+
+  table{
+    /* background-color: #313140; */
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th{
+    text-align: left;
+  }
+
+  th:nth-child(1) {
+    width: 40%; /* Adjust this percentage for the first column */
+  }
+
+  th:nth-child(2),
+  th:nth-child(3) {
+    width: 30%; /* Adjust this percentage for the second and third columns */
+  }
