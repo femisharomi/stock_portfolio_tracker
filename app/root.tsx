@@ -1,7 +1,7 @@
 /*root.tsx*/
 import React, {useState} from 'react';
 import { Meta, Links, Outlet, Scripts, useNavigate } from "@remix-run/react";
-import appStylesHref from "./app.css?url";
+import appStylesHref from "./styles/app.css?url";
 import {LinksFunction, redirect } from '@remix-run/node';
 
 //Adding the stylesheet to all pages rendered.
@@ -19,6 +19,13 @@ export default function App() {
         <Links />
       </head>
       <body>
+      <header>
+          <ul>
+            <li id="home-button"> SPC </li>
+            <li id="account-value"> Account Value: £10,320 </li>
+            <li id="user-name"> Femi Sharomi </li>
+          </ul>
+        </header>
         {/* Content gets generated between here - will need to expand on how it all looks later...... */}
         <Outlet />
         <Scripts />

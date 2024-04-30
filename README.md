@@ -1,8 +1,7 @@
 # Stock Portfolio Tracker!
 
-- [React Remix Quick Start](https://remix.run/docs](https://remix.run/docs/en/main/start/quickstart )
-
-stock_portfolio_tracker/ = Root level
+We're currently developing a Stock Portfolio Tracker using React Remix, HTML/CSS, Typescript, and Javascript. This tracker will offer users a platform to monitor and manage their stock investments, providing real-time data updates and intuitive tools for analysis.
+(This README is currently incomplete and will have more instructions once the project is nearer to its completion.) 
 
 ## Installation and dependencies: 
 
